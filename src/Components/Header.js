@@ -1,15 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Navbar, Nav, Form, Button } from "react-bootstrap";
 
 import "./Header.css";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
 
 const Header = () => {
   return (
@@ -31,13 +24,13 @@ const Header = () => {
           </Link>
         </li>
       </ul> */}
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" sticky="top">
         <Navbar.Brand href="/">GroceryMate</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="mr-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
+            style={{ maxHeight: "200px" }}
             navbarScroll
           >
             <Nav.Link href="/Shop">Shop</Nav.Link>
