@@ -9,8 +9,8 @@ const Product = (props) => {
       <div className="product img">
         <img src={image || "https://via.placeholder.com/100"} alt="IMG" />
       </div>
-      <h3>{Name || "Default Name"}</h3>
-      <h5>₹{Price || "Price"}/- </h5>
+      <h5>{Name || "Default Name"}</h5>
+      <p>₹{Price || "Price"}/- </p>
     </article>
   );
 };
