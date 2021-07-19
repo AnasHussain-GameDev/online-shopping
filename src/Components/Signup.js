@@ -2,7 +2,7 @@ import React from "react";
 
 const Signup = () => {
   return (
-    <div className="container m-3 p-4 border-secondary rounded-2 bg-dark text-secondary text-center align-items-lg-end">
+    <div className="container m-3 p-4 border-secondary rounded-2 bg-dark text-secondary text-center">
       <form action="">
         <label className="mb-3 font-weight-bolder h3">Signup Form</label>
         <div className="form-group">
