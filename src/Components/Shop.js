@@ -12,9 +12,6 @@ const Shop = () => {
       <div className="products">
         <ProductsList />
       </div>
-      <div className="footer">
-        <h1>Footer</h1>
-      </div>
     </div>
   );
 };

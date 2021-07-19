@@ -1,17 +1,17 @@
 import React from "react";
-import "./Product.css";
+import { Card } from "react-bootstrap";
 
 const Product = (props) => {
   const { image, Name, Price } = props;
 
   return (
-    <article className="Product">
-      <div className="product img">
-        <img src={image || "https://via.placeholder.com/100"} alt="IMG" />
-      </div>
-      <h5>{Name || "Default Name"}</h5>
-      <p>₹{Price || "Price"}/- </p>
-    </article>
+    <Card onClick={() => console.log("hello")}>
+      <Card.Img variant="top" src={image} />
+      <Card.Body>
+        <Card.Title>{Name}</Card.Title>
+        <Card.Text>₹{Price || "Price"}/- </Card.Text>
+      </Card.Body>
+    </Card>
   );
 };
 
