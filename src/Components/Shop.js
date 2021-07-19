@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsList from "../Components/ProductsList";
+import ProductsList from "./ProductsList";
 import "./Shop.css";
 
 const Shop = () => {
@@ -7,9 +7,6 @@ const Shop = () => {
     <div className="Container">
       <div className="categories">
         <h1>Categories</h1>
-      </div>
-      <div className="filters">
-        <h1>Filters</h1>
       </div>
       <div className="products">
         <ProductsList />

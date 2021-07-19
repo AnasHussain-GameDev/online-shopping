@@ -5,7 +5,7 @@
   grid-template-rows: 5rem auto 5rem;
   grid-template-areas:
     "h h h h"
-    "m p p p"
+    "p p p p"
     "f f f f";
 }
 
@@ -16,10 +16,6 @@
   text-align: center;
   background-color: aqua;
   /* grid-column: 1/-1; */
-}
-
-.filters {
-  grid-area: m;
 }
 
 .footer {

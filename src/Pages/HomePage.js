@@ -1,11 +1,10 @@
 import React from "react";
-import Signup from "../Components/Signup";
+import Shop from "../Components/Shop";
 
 function HomePage() {
   return (
     <div>
-      <h1>HomePage</h1>
-      <Signup />
+      <Shop />
     </div>
   );
 }
