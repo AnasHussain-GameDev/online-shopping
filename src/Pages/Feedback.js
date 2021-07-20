@@ -1,9 +1,9 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 
 const Feedback = () => {
   return (
-    <div className="container align-center pb-4 rounded-3 bg-dark text-secondary">
+    <div className="container align-center pb-4 rounded-3 bg-dark text-secondary mt-4">
       <h1 className=" m-3 text-center">FeedBack</h1>
       <Form className="m-4 ">
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -17,6 +17,9 @@ const Feedback = () => {
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
           <Form.Label>FeedBack</Form.Label>
           <Form.Control className="p-4" as="textarea" rows={2} />
+          <Button className="mt-4 " type="submit">
+            Submit
+          </Button>
         </Form.Group>
       </Form>
     </div>
