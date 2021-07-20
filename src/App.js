@@ -7,6 +7,7 @@ import HomePage from "./Pages/HomePage";
 import AboutUs from "./Pages/AboutUs";
 import Login from "./Pages/Signup";
 import ContactUs from "./Pages/ContactUs";
+import Feedback from "./Pages/Feedback";
 
 import NotFound from "./Pages/NotFound";
 
@@ -16,9 +17,10 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/Login" component={Login} />
+        <Route path="/Login" component={Login} />
         <Route path="/AboutUs" component={AboutUs} />
         <Route path="/ContactUs" component={ContactUs} />
+        <Route path="/Feedback" component={Feedback} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

@@ -3,7 +3,7 @@ import React from "react";
 const ContactUs = () => {
   return (
     <div>
-      <div className="container rounded-2 bg-dark text-white p-2">
+      <div className="container rounded-2 bg-dark text-white p-2 mt-4">
         <h2>
           You can contact us through{" "}
           <h5>

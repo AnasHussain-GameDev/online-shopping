@@ -1,13 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="footer ">
+    <div className="fixed-bottom bg-dark text-center">
       <h5>
-        <a href="/ContactUs">Contact Us</a>
+        <Link className="badge badge-secondary" to="/ContactUs">
+          Contact Us
+        </Link>
       </h5>
       <h5>
-        <a href="#">Feedback</a>
+        <Link className="badge badge-secondary" to="/Feedback">
+          Feedback
+        </Link>
       </h5>
     </div>
   );
