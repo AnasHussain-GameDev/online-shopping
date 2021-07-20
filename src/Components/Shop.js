@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Categories from "../Components/Categories";
 import ProductsList from "./ProductsList";
 import "./Shop.css";
 
 const Shop = () => {
+  const [category, setCategory] = useState("All");
+
   return (
     <div className="Container">
       <div className="categories">
-        <Categories />
+        <Categories setCategory={setCategory} />
       </div>
       <div className="products">
-        <ProductsList />
+        <ProductsList category={category} />
       </div>
     </div>
   );
