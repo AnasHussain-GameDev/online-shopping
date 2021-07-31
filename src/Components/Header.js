@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BiCart } from "react-icons/bi";
 
 import "./Header.css";
+import store from "../store";
 
-const Header = () => {
+const Header = (props) => {
+  store.subscribe(() => {
+    const state = store.getState();
+    setCount(state.count);
+  });
+
+  const [count, setCount] = useState(0);
   return (
     <>
       <Navbar bg="light" expand="lg" sticky="top">
@@ -21,8 +28,9 @@ const Header = () => {
         <Link className="text-dark text-decoration-none mx-3" to="/AboutUs">
           About Us
         </Link>
-        <Link className="text-dark text-decoration-none mx-3" to="#">
-          <BiCart />
+        <Link className="text-dark text-decoration-none mx-3" to="/Cart">
+          <div className="counter">{count}</div>
+          <BiCart></BiCart>
         </Link>
       </Navbar>
     </>

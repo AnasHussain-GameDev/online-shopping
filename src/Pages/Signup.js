@@ -5,7 +5,7 @@ const Signup = () => {
     <div className="container mt-3">
       <div className="row">
         <div className="col align-middle mt-4 p-3 rounded-2 bg-dark mx-3 text-white text-center flex-column">
-          <form action="">
+          <form action="/SignUp" method="POST">
             <label className="mb-3 fw-bold h3 text-secondary">
               Signup Form
             </label>
@@ -53,7 +53,7 @@ const Signup = () => {
           </form>
         </div>
         <div className=" col align-middle mt-4 mx-3 p-3 rounded-2 bg-dark text-white text-center flex-column">
-          <form action="">
+          <form action="/SignIn" method="POST">
             <label className="mb-3 fw-bold h3 text-secondary">Sign in</label>
             <div className="form-group">
               <label className="form-label">Email</label>
